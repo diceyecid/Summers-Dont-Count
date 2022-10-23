@@ -1920,7 +1920,7 @@ GameObject:
   - component: {fileID: 2405702574658233201}
   - component: {fileID: 2803627947599217821}
   m_Layer: 0
-  m_Name: Piano
+  m_Name: PianoV1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

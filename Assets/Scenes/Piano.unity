@@ -815,7 +815,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.01
   far clip plane: 20
   field of view: 60
   orthographic: 0
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 640af9c813a9444539ec2ef628622c11,
     type: 2}
   m_MaxNumberOfMovingImages: 1
-  m_TrackedImagePrefab: {fileID: 3037982592823425483, guid: c8608bf40d2274c8b8b8e39d23197384,
+  m_TrackedImagePrefab: {fileID: 4110818123385988246, guid: afb7f24c254f14d05a33b26445f1cca6,
     type: 3}
 --- !u!1 &2108048539
 GameObject:
