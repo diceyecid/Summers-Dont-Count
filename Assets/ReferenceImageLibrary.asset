@@ -25,5 +25,15 @@ MonoBehaviour:
       m_GuidHigh: 4200649893159717560
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
-    m_Name: piano
+    m_Name: Piano
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5432134656994060395
+      m_GuidHigh: 13389492874785447818
+    m_SerializedTextureGuid:
+      m_GuidLow: 16448421121326855287
+      m_GuidHigh: 5137547695364350267
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: Montreal_Scene
     m_Texture: {fileID: 0}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -21,15 +22,18 @@ public class PlaceContent : MonoBehaviour
     {
 		if( Input.GetMouseButtonDown( 0 ) )
 		{
-			List<ARRaycastHit> hitPoints = new List<ARRaycastHit>();
-			raycastManager.Raycast( Input.mousePosition, hitPoints, TrackableType.Planes );
+			//List<ARRaycastHit> hitPoints = new List<ARRaycastHit>();
+			//raycastManager.Raycast( Input.mousePosition, hitPoints, TrackableType.Planes );
 
-			if( hitPoints.Count > 0 )
-			{
-				Pose pose = hitPoints[0].pose;
-				transform.rotation = pose.rotation;
-				transform.position = pose.position;
-			}
+			//if( hitPoints.Count > 0 )
+			//{
+				//Pose pose = hitPoints[0].pose;
+				//transform.rotation = pose.rotation;
+				//transform.position = pose.position;
+			//}
+			
+			SceneManager.LoadScene( "PianoInteraction" );
+			
 		}
     }
 }
