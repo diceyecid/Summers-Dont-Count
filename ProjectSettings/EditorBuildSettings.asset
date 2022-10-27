@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ImageTracking.unity
     guid: c0100422a324e4bfaa5f19d2bd76f1b1
+  - enabled: 1
+    path: Assets/Scenes/PianoInteraction.unity
+    guid: a6e0f6cf8bbbc40d8b3e3921ec0957f6
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
