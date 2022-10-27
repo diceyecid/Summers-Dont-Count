@@ -20,8 +20,10 @@ public class PianoKey : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		// mouse click or tap
 		if( Input.GetMouseButtonDown( 0 ) )
 		{
+			// detect click on piano keys (colliders)
 			RaycastHit hit;
 			Ray ray = Camera.main.ScreenPointToRay( Input.mousePosition );
 			if( Physics.Raycast( ray, out hit ) )
@@ -32,6 +34,7 @@ public class PianoKey : MonoBehaviour
 		}
     }
 
+	// map the piano key objects to their key names
 	private string GetKey( string name )
 	{
 		// map mesh name to key name
@@ -48,6 +51,7 @@ public class PianoKey : MonoBehaviour
 		return "";
 	}
 
+	// update UI to the dialogue box
 	private void UpdateUI( string key )
 	{
 		Debug.Log( count );

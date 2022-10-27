@@ -20,29 +20,18 @@ public class ChangeToPianoScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		// Mouse click or Tap
 		if( Input.GetMouseButtonDown( 0 ) )
 		{
+			// raycast a ray to detect model in AR
 			List<ARRaycastHit> hitPoints = new List<ARRaycastHit>();
 			raycastManager.Raycast( Input.mousePosition, hitPoints, TrackableType.AllTypes );
 
 			if( hitPoints.Count > 0 )
 			{
+				// load piano interaction scene
 				SceneManager.LoadScene( "PianoInteraction" );
 			}
 		}
-
-		//if( Input.GetMouseButtonDown( 0 ) )
-		//{
-			//RaycastHit hit;
-			//Ray ray = Camera.main.ScreenPointToRay( Input.mousePosition );
-			//if( Physics.Raycast( ray, out hit ) )
-			//{
-				//if( hit.transform.name == gameObject.transform.name )
-				//{
-					//Debug.Log( hit.transform.name );
-					//SceneManager.LoadScene( "Scenes/PianoInteraction" );
-				//}
-			//}
-		//}
     }
 }
